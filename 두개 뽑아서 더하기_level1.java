@@ -5,7 +5,7 @@
 import java.util.*;
 
 class Solution {     
-    public ArrayList<Integer> solution(int[] numbers) { //return type을 arraylist형태로 하겠다.
+    public ArrayList<Integer> solution(int[] numbers) { // return type을 arraylist형태로 하겠다.
         ArrayList<Integer> list=new ArrayList<>();
         HashSet<Integer> hash=new HashSet<Integer>(); //중복제거
         
