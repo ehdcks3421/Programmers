@@ -5,9 +5,9 @@
 import java.util.*;
 
 class Solution {     
-    public ArrayList<Integer> solution(int[] numbers) {
+    public ArrayList<Integer> solution(int[] numbers) { //return type을 arraylist형태로 하겠다.
         ArrayList<Integer> list=new ArrayList<>();
-        HashSet<Integer> hash=new HashSet<Integer>();
+        HashSet<Integer> hash=new HashSet<Integer>(); //중복제거
         
         
         for(int i=0; i<numbers.length-1; i++)
@@ -18,13 +18,13 @@ class Solution {
             }
         }
         
-        Iterator<Integer> iter=hash.iterator();
-        while(iter.hasNext())
+        Iterator<Integer> iter=hash.iterator(); //hashset을 배열 형태로 바꿔준다.
+        while(iter.hasNext()) //iter배열에 값이 있다면
         {
-            list.add(iter.next());
+            list.add(iter.next()); //list에 값을 넣어주겠다.
         }
         
-        Collections.sort(list);
+        Collections.sort(list); //오름차순으로 정렬
         
         
         return list;
