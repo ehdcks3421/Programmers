@@ -6,7 +6,7 @@ public class Level1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int a=1;
-		int b=31;
+		int b=30;
 		
 		System.out.println(solution(a,b));
 		
